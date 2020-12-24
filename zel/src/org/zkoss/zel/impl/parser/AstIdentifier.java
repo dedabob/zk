@@ -107,8 +107,6 @@ public final class AstIdentifier extends SimpleNode {
         // EL Resolvers
         result = elResult;
         if (ctx.isPropertyResolved()) {
-            if (result instanceof Class)
-                return new ELClass((Class<?>) result);
             return result;
         }
 
